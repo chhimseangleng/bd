@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD bro Chhay</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .box{
+            width: 1000px;
+            height: auto;
+            margin: 0 auto;
+        }
+        .pic{
+            width: 400px;
+            height: 500px;
+            background-color: aqua;
+        }
+        .pic img{
+            width: 100%;
+            height: 100%;
+        }
+        .text button{
+            padding: 20px 50px;
+            background-color: blue ;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .text{
+            font-family: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pic">
+            <img src="./img/point.jpg" alt="">
+            
+        </div>
+        <div class="text">
+            <div class="textbd"></div>
+            <button type="button" id="btn">
+                Click me
+            </button>
+        </div>
+    </div>
+</body>
+<script>
+    let btn = document.getElementById('btn')
+    let pic = document.querySelector('.pic')
+    let text = document.querySelector('.text')
+    // console.log(text);
+    
+    // console.log(pic);
+    
+    // console.log(btn);
+    btn.addEventListener('click',function(){
+        pic.innerHTML = '<img src="./img/clinkers-cake-173208-2.jpg" alt="">'
+        text.innerHTML = 'Happy BD bro , wish more luck , more money , Sne ha sl kan ban yur , png kdr kang tea thom , hz kom oy bek tu turtle tt'
+    })
+    
+</script>
+</html>
